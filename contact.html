@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta character="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta home="viewport" content="width=device-width,intial scale=1.0">
+        <title> THIS IS MOHINI CHAUHAN</title>
+        <link rel="stylesheet"href="contact.css">
+
+
+
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="sidebar sidebarGo">
+                <nav>
+                    <ul>
+                        <li><a href="portfolio.html">HOME</a></li>
+
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="Blog.html">BLOGS</a></li>
+                        <li><a href="contact.html">CONTACT ME</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="main" >
+                <div class="hamburger">
+                    <img class="ham" src="ham.png"alt=""width="23px">
+                    <img class="cross"src="cross.png"alt=""width="23px">
+                </div>
+                <div class="contactform">
+                    <h2>Contact Me for Work/General Info</h2>
+                    <form form action="form_submit_message.php" onsubmit="return validate_form(this);" method="post">
+                        <div class="mb-3">
+                            <label for="Client_Email"class="form-label">Email Address</label>
+                            <br>
+                            <input type="email"class="form-control"id="clientemail"aria-describedly="emailHelp"placeholder="Enter your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ClientPhone"class="form-label">Phone</label>
+                            <input type="phone"class="form-control"id="clientphone"placeholder="Enter your phone Number" required>
+                        </div>
+                        <br>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox"class="form-check-input"id="isclient">
+                            <label class="form-check-label"for="isclient">Do you want me to do some work for u</label>
+                        </div>
+                        <button type="submit"class="btn_btn_primary">Submit</button>
+                    </form>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        <script src="contact.js">
+            
+        </script>
+
+    </body>
+
+</html>
